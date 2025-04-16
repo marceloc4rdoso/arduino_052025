@@ -7,7 +7,7 @@ void setup(){
 
 void loop(){
   leituraLuz = analogRead(A0);
-  int controleLed = map(0,1023,0,255);
+  int controleLed = map(leituraLuz, 0, 1023, 0, 255);
   analogWrite(5,controleLed);
   
 }
