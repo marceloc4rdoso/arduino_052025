@@ -14,6 +14,8 @@ void loop(){
   else if(controleLed > 255){
     controleLed = 255;
   }
+  Serial.println(leituraLuz);
+  Serial.println(" --> ");
   Serial.println(controleLed);
   analogWrite(5,controleLed);
   
